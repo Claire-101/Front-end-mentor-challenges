@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;  /* it works with grid too  */
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  height: 400px;  
+}
+
+.column {
+  flex: 1;
+  width: 33.333%;
+  padding-right: 2em;
+  padding-left: 2em;
+  box-sizing: border-box;
+}
+.column img{
+  margin-top: 2em;
+}
+.column h1{
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700px;
+  margin-top: 16px; 
+}
+.text{
+  
+  width: 175px;
+  height: 100px;
+  margin-top: 28px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400px;
+}
+.button{
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 30px;
+  border: none;
+  padding: 12px 28px;
+  margin-top: 5em;
+  font-family: "Lexend Deca", sans-serif;
+  
+}
+#press{
+  color: hsl(31, 77%, 52%);
+}
+#press:hover{
+  cursor: pointer;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+}
+#press1{
+  color: hsl(184, 100%, 22%);
+}
+#press1:hover{
+  cursor: pointer;
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+}
+#press2{
+  color: hsl(179, 100%, 13%);
+}
+#press2:hover{
+  cursor: pointer;
+  background-color: hsl(179, 100%, 13%);;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+}
+@media screen and (max-width: 376px) {
+  .container {
+    display: flex;
+    height: 300px; 
+    flex-direction: column;
+    zoom: 100%;
+    margin-top: -8em;
+
+  }
+  .column{
+   width: 270px;
+   padding-left: 3em;
+   
+  }
+  .button{
+    margin-top: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  #press{
+    color: hsl(31, 77%, 52%);
+  }
+  #press:hover{
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid white;
+  }
+  #press1{
+    color: hsl(184, 100%, 22%);
+  }
+  #press1:hover{
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid white;
+  }
+  #press2{
+    color: hsl(179, 100%, 13%);
+  }
+  #press2:hover{
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid white;
+  }
+}
+@media screen and (min-width:1400px) {
+  .container{
+    zoom: 130%;
+  }
+}
+
+
+
+
+
+
+
