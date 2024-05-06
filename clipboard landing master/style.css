@@ -12,8 +12,8 @@
     justify-content: center;
     align-items: center;
     padding-top: 60px;
-    background-image: url(images/bg-header-desktop.png);
-}
+    background-image: url(images/bg-header-desktop.png); }
+
     /*HISTORY SECTION*/
 .history{
     display: flex;
@@ -21,22 +21,23 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    text-align: center;}
+    text-align: center; }
+
     h1{
     font-family:  "Bai Jamjuree", sans-serif;
-    font-weight: 600;}
+    font-weight: 600; }
+
     .history p{
     margin-top: 20px;
-    white-space-collapse:preserve;
-    }
+    white-space-collapse:preserve; }
+
     p{
     font-family:  "Bai Jamjuree", sans-serif;
     Font-size: 1.1em;
-    color:  hsl(210, 10%, 33%);
-   
-    }
+    color:  hsl(210, 10%, 33%); }
+                    
     span{
-    margin-top: 30px;}
+    margin-top: 30px; }
 
     button{
     padding: 0.8em 1.5em 0.8em 1.5em;
@@ -44,12 +45,10 @@
     font-family:  "Bai Jamjuree", sans-serif;
     color: white;
     border: none;
-    margin-right:16px;}
+    margin-right:16px; }
 
     button:hover{
-        cursor: pointer;
-    }
-    
+        cursor: pointer; }
 
 
     /* TRACK SECTION*/
@@ -59,55 +58,42 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 5em;}
+    margin-top: 5em; }
 
     .track p{
         margin-top: 10px;
-        white-space-collapse: preserve;
-       /* width: 55%; */
-    }
+        white-space-collapse: preserve; }
 
-    /* PICTURE + TEXT SECTION*/
+    /*<<<<<< PICTURE + TEXT SECTION >>>>>*/
     .products{
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
-    margin-top: 40px;
-   
-    /*margin-top: 5em; */}
+    margin-top: 40px; }
 
     .column{
-   /* width: fit-content; */
     padding-top: 10px;
-    border: 1px solid black;
-    margin: auto;
-   
-    }
+    margin: auto; }
 
      .quicksearch ,.iCloud ,.History{
         margin-top: 35px;
-        font-size: 1.1em;
-    }
-    .column p{
-        margin-top: 5px;
-    }
-    .column h1{
-        font-size: 1.4em;
-    } 
+        font-size: 1.1em; }
 
+    .column p{
+        margin-top: 5px; }
+
+    .column h1{
+        font-size: 1.4em; } 
 
     .column-image img{
         width: 100%;
        /* max-width: 37rem; */
-        margin-top: 20px;
-    }
+        margin-top: 20px; }
 
     .column-image{
     border: 1px solid black;
-    margin: auto;
-    
-    }
+    margin: auto;  }
 
-   /* ACCESS SECTION*/ 
+   /*<<<<<<<  ACCESS SECTION  >>>>>>>*/ 
     .access{
     display: flex;
     flex-direction: column;
@@ -118,36 +104,31 @@
 
     .access p{
         width: 58%;
-        margin-top: 10px;
-    }
+        margin-top: 10px;  }
 
     .access img{
     width: 40rem;
     max-width: 100%;
-    margin-top: 30px;}
+    margin-top: 30px; }
 
-    /* TEXT SECTION*/
+    /* <<<<<<<<<<<<<<  TEXT SECTION  >>>>>>>>>>>*/
 
     .info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-   
-    }
+    text-align: center; }
 
     .info p{
-        margin-top: 10px;
+        margin-top: 10px; }
 
-    }
 
-    /* SUPERCHARGE SECTION*/
+    /* <<<<<<<<<<<<<   SUPERCHARGE SECTION >>>>>>>>>>>>>>>*/
     .supercharge{
     margin-top: 4em;
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(20em, 1fr)); 
-    }
+    grid-template-columns:repeat(auto-fill, minmax(20em, 1fr));  }
 
     .actions{
     display: flex;
@@ -156,34 +137,26 @@
     align-items: center;
     text-align: center;
     padding-left: 10px;
-    padding-right: 10px;}
+    padding-right: 10px; }
 
     .actions img{
-        width: 15%;
-    }
+        width: 15%; }
 
     .actions h1 ,p{
-        margin-top: 20px;
-    }
+        margin-top: 20px; }
 
     /* BRANDS SECTION*/
     .brands{
-      /*  background-color: aquamarine; */
     margin-top: 8rem;
     display: grid;
-   /* padding-left: 40px;
-    padding-right: 40px; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12em, 1fr)); 
-    grid-gap: 2em;
-
-    }
+    grid-gap: 2em; }
 
     .logo{
-        padding-left: 20px;
-        }
+    padding-left: 20px; }
 
-    /* CLIPBOARDS SECTION*/
+    /* <<<<<<<<   CLIPBOARDS SECTION  >>>>>>>>>>>>>*/
     .clipboard{
     display: flex;
     flex-direction: column;
@@ -193,17 +166,14 @@
     margin-top: 6em; }
 
     .clipboard p{
-        /*width: 53%; */
-        white-space-collapse: preserve;
-    }
+    white-space-collapse: preserve; }
 
     /* FOOTER SECTION*/
     .footer{
     margin-top: 4em;
     background-color: hsla(201, 11%, 66%, 0.2);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-   }
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); }
 
     .image {
    display: flex;
@@ -265,48 +235,41 @@
         button{
             margin-right:0px;
            margin-bottom: 20px;
-           padding: 0.8em 5em 0.8em 5em;
-            }
+           padding: 0.8em 5em 0.8em 5em; }
+        
         .column{
             grid-template-columns: 1fr;
-           text-align: center;
-        }
+           text-align: center; }
+        
         .column-image img{
-            max-width: 100%;
-        }
+            max-width: 100%; }
         
         .products{
-            grid-template-columns: 1fr;
-        }
+            grid-template-columns: 1fr;}
         
         .access img{
-            max-width: 100%;
-        }
+            max-width: 100%;}
         
         .supercharge{
             grid-template-columns: 1fr;
-            row-gap: 40px;
-        }
+            row-gap: 40px; }
         
         .brands{
             grid-template-columns: 1fr;
             margin-top: 5rem;
-            text-align: center;
-        }
+            text-align: center; }
         
         .footer{
-            grid-template-columns: 1fr;
-         
-        }
+            grid-template-columns: 1fr; }
+        
         .FAQ, .Privacy, .Install{
-           line-height: 20px;
-        }
+           line-height: 20px; }
+        
         .icons{
-            margin-top: 30px;
-        }
+            margin-top: 30px;}
+        
         .image img{
-            width: 30%;
-        }
+            width: 30%; }
     }
 @media screen and (max-width:320px) and (min-width:480px){
     
