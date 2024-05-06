@@ -1,0 +1,16 @@
+This is a solution to to the Clipboard Landing Page on fronten mentor.
+
+Built with :
+  Html 5
+  css properties 
+  css grid 
+  mobile first workflow
+
+What i have learned:
+  How to tacle responsiveness by using
+    fluid grid elements
+    using flexible widths and avoid heights of elements where not neccessary.
+    usinig flexible widths for images.
+
+UseFul Resources.
+  kevin powel responsive layout course.
