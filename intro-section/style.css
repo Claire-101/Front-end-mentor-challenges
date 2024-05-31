@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+}
+nav{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:hsl(0, 0%, 98%) 
+}
+
+ul{
+    list-style: none;
+ 
+    margin-left: 20px;
+}
+ul li{
+    display: inline-block;
+   position: relative;
+}
+ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font: 15px;
+}
+
+
+ul li ul.dropdown li a{
+    display: flex;
+    
+}
+.dropdown img{
+    margin-right:8px ;
+  
+}
+ul li ul.dropdown{
+    width: 100%;
+    background-color: white;
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    
+    
+      
+}
+#drop1{
+    width: 110%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -10px;
+
+}
+#drop1 a{
+    padding: 8px;
+}
+#drop2{
+    width: 90%;
+    margin-left: 0px;
+}
+
+    #drop2 a{
+        padding: 5px;
+    }
+
+ul li:hover ul.dropdown{
+    display: block;
+    margin-top: 2px;
+}
+
+#buttons{
+    margin-left: auto;
+   
+}
+button{
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    margin-right: 20px;
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+}
+button:hover{
+   background-color: white;
+   color: black;
+   border: solid black;
+}
+/* SIDE NAVIGATION */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* BODY PART */
+.grid-container{
+    /*background-color: antiquewhite;*/
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    margin-top: 10px;
+}
+.item{
+    height: 510px;
+}
+.item1{ 
+    display: inline-flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding-top: 8rem;
+ } 
+ .item1 h1{
+    font-family: "Epilogue", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    white-space: preserve;
+  
+ }
+ .item p{
+    font-family:"Epilogue", sans-serif; 
+    font-size: 17px;
+    white-space: preserve;
+    margin-top: 30px;
+    color: hsl(0, 0%, 41%);
+ }
+
+.mybutton{
+
+    background-color: black;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+   margin-top: 40px;
+    margin-left: 0px;
+}
+
+ .logos{
+    margin-top: auto;
+}
+.logos img{
+    margin-right: 22px;
+}
+.item2{
+    background-image: url(images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0px;
+}
+
+@media screen  and (max-width:480px) and (min-width:320px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #notseen{
+        display: none;
+    }
+    #buttons{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-column-end: auto;
+        margin: 0;
+    }
+    
+    .grid-container .item:nth-of-type(1) {
+        order: 2;
+    }
+    .item1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+   
+
+    
+
+
