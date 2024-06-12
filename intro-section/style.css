@@ -8,194 +8,223 @@
     padding: 0;
     font-family: "Epilogue", sans-serif;
 }
-nav{
-    
+
+.container{
     display: flex;
-    justify-content: center;
+    font-size: 14px;
+    justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:hsl(0, 0%, 98%) 
-}
-
-ul{
     list-style: none;
- 
-    margin-left: 20px;
-}
-ul li{
-    display: inline-block;
-   position: relative;
-}
-ul li a{
-    display: block;
-    padding: 15px 20px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font: 15px;
-}
 
-
-ul li ul.dropdown li a{
+}
+span{
     display: flex;
-    
 }
-.dropdown img{
-    margin-right:8px ;
+
+.navbar{
+    padding: 0.4rem 1.5rem;
+   
+    margin-left: 30px;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem; 
+}
+
+.nav-link, .dropdown li{
+    list-style: none;
+    height: 60%;
+    padding: 5px 2px;
   
 }
-ul li ul.dropdown{
-    width: 100%;
-    background-color: white;
-    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+a{
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    font-size: 15px;
+}
+a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.dropdown{
     position: absolute;
+    padding: 10px 12px ;
+    margin: 13px  7px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     z-index: 999;
     display: none;
-    
-    
-      
-}
-#drop1{
-    width: 110%;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: -10px;
-
-}
-#drop1 a{
-    padding: 8px;
-}
-#drop2{
-    width: 90%;
-    margin-left: 0px;
-}
-
-    #drop2 a{
-        padding: 5px;
-    }
-
-ul li:hover ul.dropdown{
-    display: block;
-    margin-top: 2px;
-}
-
-#buttons{
-    margin-left: auto;
    
 }
+.dropdown img{
+    margin-right: 10px;
+}
+.Features , Features{
+   position: absolute;
+   margin-left: -50px;
+}
+.services a{
+    display: flex;
+    align-items: center;
+}
+.dropdown-icon{
+    margin-left: 7px;
+}
+
 button{
-    border-radius: 10px;
-    padding: 10px 15px 10px 15px;
-    margin-right: 20px;
     border: none;
-    font-size: 14px;
+     margin: 10px 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
     background-color: transparent;
 }
 button:hover{
-   background-color: white;
-   color: black;
-   border: solid black;
+    background-color: white;
+    color: black;
+    border: solid black;
 }
-/* SIDE NAVIGATION */
+
+
 .sidebar{
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    z-index: 999;
     background-color: white;
-    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    z-index: 999;
+    padding-left: 20px;
+    list-style: none;
+    padding-top: 50px;
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
-/* BODY PART */
-.grid-container{
-    /*background-color: antiquewhite;*/
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    margin-top: 10px;
+.close {
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 20px;
+    margin-right: 10px;
 }
-.item{
-    height: 510px;
-}
-.item1{ 
-    display: inline-flexbox;
+
+.sidebar .nav-links{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    padding-top: 8rem;
- } 
- .item1 h1{
-    font-family: "Epilogue", sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    white-space: preserve;
+    padding: 0;
+}
+.sidebar .dropdown{
+    position: relative;
+    padding: 10px 12px ;
+    margin: 13px  7px;
+    width: 60%;
+    margin-left: 20px;
+    margin-bottom: 0px;
+
+}
+.sidebar .nav-link, .dropdown li{
+    list-style: none;
+    height: 30%;
+    padding: 4px 2px;
   
- }
- .item p{
-    font-family:"Epilogue", sans-serif; 
-    font-size: 17px;
-    white-space: preserve;
-    margin-top: 30px;
-    color: hsl(0, 0%, 41%);
- }
+}
+.sidebar .nav-links {
+    display: flex;
+    gap:12px; 
+}
+.side-button{
+    display: flex;
+    flex-direction: column;
+}
+/*.services:hover .dropdown{
+    display: block;
+    position: fixed;
+}
 
+/* CONTENT SECTION */
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.content{
+    border:none;
+    padding-left: 150px;
+    display: block;
+    position: relative;
+    padding-top:7.8rem;
+}
+.content h1{
+    font-size: 50px;
+    white-space-collapse: preserve;
+}
+p{
+    width: 78%;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.logo{
+    position: absolute;
+    bottom: 0;
+   
+}
 .mybutton{
-
     background-color: black;
-    color: white;
-    padding: 10px 25px 10px 25px;
+    color: aliceblue;
+    padding: 10px 20px 10px 20px;
     border-radius: 10px;
-   margin-top: 40px;
-    margin-left: 0px;
+    margin-top: 40px;
 }
-
- .logos{
-    margin-top: auto;
-}
-.logos img{
-    margin-right: 22px;
-}
-.item2{
+.image{
     background-image: url(images/image-hero-desktop.png);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    padding-left: 0px;
+    height: 520px;
 }
+/* RESPONSIVENESS*/
 
-@media screen  and (max-width:480px) and (min-width:320px){
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    #notseen{
+@media screen and (max-width:921px) and (min-width:320px){
+    .navbar ,#button{
         display: none;
     }
-    #buttons{
-        display: none;
+    .container{
+        padding: 10px 10px;
     }
     .grid-container{
         grid-template-columns: 1fr;
-        grid-column-end: auto;
-        margin: 0;
     }
-    
-    .grid-container .item:nth-of-type(1) {
+    .grid-container .content:nth-of-type(1){
         order: 2;
-    }
-    .item1{
+    } 
+    .content {
+        padding: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
+    .content h1{
+        font-size: 30px;
+        white-space: nowrap;
     }
+    .logo{
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }   
+}
+
+@media screen and (min-width:1000px){
+    #menu{
+        display: none;
+    }
+   
+}
    
 
     
