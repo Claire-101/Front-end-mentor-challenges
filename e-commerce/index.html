@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Box</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<nav class="navigation">
+    <div class="info">
+      <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd" id="open"/></svg>
+
+        <span>
+            <img src="images/logo.svg" alt="">
+        </span>
+        <ul class="nav-links">
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div class="profile">
+        <button class="icon">
+            <img src="images/icon-cart.svg" alt="">
+        </button>
+
+        <img src="images/image-avatar.png" alt="" width="50px"> </div>
+</nav>
+<div class="side-navigation">
+
+  <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd" id="close"/></svg>
+
+  <ul class="links" id="mobile">
+    <li><a href="#">Collection</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contacts</a></li>
+</ul>
+</div>
+
+<section>
+ 
+  <div class="display-gallery">
+    
+   <!---
+      <button class="exit">
+      <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="orange" fill-rule="evenodd"/></svg>
+    </button> 
+   --> 
+
+    <div class="images">
+
+       <button class="back">
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button>  
+    
+      <img src="images/image-product-1.jpg" alt="not there" >
+
+    
+            <button class="forward">
+        <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button> 
+
+
+    
+    </div>
+    
+
+    <div class="thumbnail">
+      <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" data-full-image="images/image-product-1.jpg">
+
+      <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" data-full-image="images/image-product-2.jpg">
+
+      <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" 
+      data-full-image=" images/image-product-3.jpg" >
+
+      <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" 
+      data-full-image="images/image-product-4.jpg" >
+    </div>
+
+  </div> 
+  
+  <div class="box1">
+      <div class="Fall">
+          <H2>SNEAKER COMPANY</H2>
+
+          <H1> Fall Limited Edition Sneakers</H1>
+
+          <p style="margin-top: 30px; font-size: 16px; color: hsl(219, 9%, 45%); width: 85%;"> 
+              These low-profile sneakers are your perfect casual wear companion. Featuring a durabble rubber outer sole, they'll 
+              withstand everything the weather can offer.
+          </p>
+         
+          <div class="content">
+              <span class="price">
+                  $125.00 
+                  <p >50%</p>
+              </span>
+
+             <span class="before">$250.00</span>
+
+      
+              
+          </div>
+
+          
+              
+          <div class="addtocart">
+              <div class="quantity">
+                  <button class="minus" aria-label="Decrease">&minus;</button>
+                  <input type="number" class="input-box"
+                  value="1" min="1" max="10"> 
+                  <button class="addition" aria-label="Increase">&plus;</button>
+              </div>
+
+              <button class="cart">
+                  <img src="images/icon-cart.svg" alt="">
+                  Add to cart</button>
+
+          </div>
+      </div>
+  </div>
+</section>
+
+  <div class="image-gallery">
+    
+    <button class="close-button">
+      <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="orange" fill-rule="evenodd"/></svg>
+
+    </button>
+    <div class="image-container">
+      
+      <button class="prev-button">
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button>
+
+      <img src="images/image-product-1.jpg" alt="not there">
+
+      <button class="next-button">
+        <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button>
+      
+     
+    </div>
+    
+
+    <div class="thumbnail-container" id="touch">
+      <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" data-full-image="images/image-product-1.jpg">
+
+      <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" data-full-image="images/image-product-2.jpg">
+
+      <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" 
+      data-full-image=" images/image-product-3.jpg">
+
+      <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" 
+      data-full-image="images/image-product-4.jpg">
+    </div>
+  </div> 
+
+<div class="productlist">
+    <SPAN style="display: block;">
+        <H2>Cart</H2>
+    </SPAN>
+   <hr style="border: 1px solid; margin: 10px 13px;">
+    <div class="elements">
+        <span>
+            <img src="images/image-product-1.jpg" alt="" class="productone">
+        </span>
+
+        <span style="align-self: center;">
+            <h4 style="font-size: 17px; font-weight: 400; "> Fall limited edition sneakers</h4>
+             <h3 style="font-size: 15px; font-weight: 400;">Price x quantity</h3>
+        </span>
+
+        <p id="text" style="display: none;" ></p>
+
+        <button class="delete" onclick="remove()" >
+            <img src="images/icon-delete.svg" alt="">
+        </button>
+    </div>
+
+    <button class="checkout"> Checkout</button>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
