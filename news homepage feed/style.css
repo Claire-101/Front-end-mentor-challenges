@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px;
+}
+#logo{
+    margin-left: 17px;
+}
+ul{
+    display: flex; 
+    align-self: center;
+}
+li{
+    margin: 0px 23px;
+    list-style: none;
+    color:  hsl(236, 13%, 42%);
+}
+li:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+h2{
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+}
+.mobileview{
+    display: flex;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color:hsl(36, 100%, 99%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    display: none;
+    
+}
+.mobileview button{
+    float: right;
+    border: none;
+    background-color: transparent;
+}
+.mobileview > ul{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 10px;
+}
+.mobileview li{
+    margin: 10px;
+}
+main{
+    display: grid;
+    height: 93vh;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 380px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px;
+   padding-top: 13px;
+}
+.menu{
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.box1{
+    grid-column: 1/3;
+}
+        .image{
+            height: 60%;
+            background-image: url(images/image-web-3-desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        } 
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 0;
+        }
+        #readmore{
+            background-color: hsl(5, 85%, 63%);
+            border: none;
+            color: black;
+            padding:  10px 30px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        button:active{
+            background-color: hsl(240, 100%, 5%);
+            color: hsl(36, 100%, 99%);
+        }
+        .heading{
+            margin-top: 10px;
+        }
+        
+        .heading > h1{
+            font-size: 43px;
+            width: 68%;
+        }
+        .heading > p{
+            width: 90%;
+        }
+.box2{
+    grid-column: 3/5;
+    padding-top: 6px;
+    padding-left: 30px;
+    padding-right: 16px;
+    background-color: hsl(240, 100%, 5%);
+}
+        .box2 h1{
+            color: hsl(35, 77%, 62%);
+        }
+        .text{
+            margin-top: 20px;
+            width: 80%;
+        }
+        .text h2{
+            color: hsl(36, 100%, 99%);
+        }
+        .text h2:hover{
+            cursor: pointer;
+            color: hsl(35, 77%, 62%);
+        }
+        hr{
+            margin-top: 12px;
+        }
+.box3{
+    grid-column: 1/5;
+    display: flex;  
+    width: fit-content;
+    margin-top: 20px;
+}
+    .tech{
+        display: flex;
+       
+    }
+    .tech > div{
+        width: 64%;
+        margin-left: 10px;
+    }
+    .tech:nth-child(3){
+        margin-left: 20px;
+    }
+    #stuff{
+        height: 100%;
+    }
+    #stuff > img{
+        width: 100px;
+    }
+   
+    div > p{
+        font-weight: 400;
+        color:hsl(236, 13%, 42%);
+        font-size: 15px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    div > h2{
+        margin-top: 10px;
+    }
+    div > h2:hover{
+        cursor: pointer;
+        color: hsl(35, 77%, 62%);
+    }
+
+
+@media (min-width:320px) and (max-width:780px){
+    nav{
+        padding: 5px 5px;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+    ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    main{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 50% 40% 43%;
+        padding: 0;
+        height: auto;
+        gap: 0;
+    }
+    .box1, .box2, .box3{
+        grid-column: 1/1;
+        padding: 10px;
+        
+       
+    }
+    .box2{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 16px;
+        margin: 0;
+        height: auto;
+        margin-top: 15px;
+    }
+    .box3{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .image{
+        height: 53%;
+        background-size: cover;
+        background-image: url(images/image-web-3-mobile.jpg);
+       
+    } 
+    .content{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .heading > h1{
+        font-size: 30px;
+        width: 80%;
+    }
+    .tech:nth-child(3){
+        margin-left: 0px;
+    }
+    .tech{
+        margin-top: 10px;
+    }
+    .tech > div{
+        width: 64%;
+        margin-left: 10px;
+    }
+    div > p{
+        margin-top: 10px;
+       
+    }
+    div > h2{
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+   
+@media (min-width:1400px) {
+    main{
+        display: grid;
+        height: 93vh;
+      
+    }
+}
